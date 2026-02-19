@@ -19,7 +19,18 @@ data class Campground(
     val latLong: String?,
     @SerialName("images")
     val images: List<CampgroundImage>?,
-) : java.io.Serializable
+) : java.io.Serializable {
+    val imageUrl: String
+        get() = images?.firstOrNull { !it.url.isNullOrEmpty() }?.url ?: ""
+}
 
 
 // TODO: Create a data class for the Image Response
+@Keep
+@Serializable
+data class CampgroundImage(
+    @SerialName("url")
+    val url: String?,
+    @SerialName("title")
+    val title: String?,
+) : java.io.Serializable
