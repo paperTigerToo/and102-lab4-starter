@@ -13,6 +13,12 @@ import kotlinx.serialization.Serializable
 data class Campground(
     @SerialName("name")
     val name: String?,
+    @SerialName("description")
+    val description: String?,
+    @SerialName("latLong")
+    val latLong: String?,
+    @SerialName("images")
+    val images: List<CampgroundImage>?,
 ) : java.io.Serializable
 
 
