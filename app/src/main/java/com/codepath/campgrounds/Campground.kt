@@ -4,8 +4,12 @@ import android.support.annotation.Keep
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
-// TODO: Create a data class for the Data Response
-
+@Keep
+@Serializable
+data class CampgroundResponse(
+    @SerialName("data")
+    val data: List<Campground>?
+)
 
 // TODO: Implement remaining keys of the Campground data class
 @Keep
