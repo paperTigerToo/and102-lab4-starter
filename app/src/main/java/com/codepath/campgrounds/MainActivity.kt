@@ -73,7 +73,6 @@ class MainActivity : AppCompatActivity() {
                     parsedJson.data?.let { list ->
                         campgrounds.addAll(list)
 
-                        // TODO: Save the campgrounds and reload the screen
                         campgroundAdapter.notifyDataSetChanged()
                     }
                 } catch (e: JSONException) {
