@@ -1,5 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+    <style name="Base.Theme.Campgrounds" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <!-- Set the drawable as the background for the entire app -->
+        <item name="android:windowBackground">@drawable/texturesgradient</item>
+
+        <!-- Keep the rest of your custom text styles -->
+        <item name="android:textViewStyle">@style/App.TextView</item>
+    </style>
     <style name="Theme.Campgrounds" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
@@ -12,5 +21,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
     </style>
+    <style name="App.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:shadowColor">@color/app_text_shadow_color</item>
+        <item name="android:shadowDx">1.5</item>
+        <item name="android:shadowDy">1.5</item>
+        <item name="android:shadowRadius">1.6</item>
+    </style>
+
 </resources>
