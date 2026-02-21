@@ -4,6 +4,7 @@
     android:id="@+id/detailLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/texturesgradient"
     tools:context=".DetailActivity">
 
     <ImageView
@@ -19,6 +20,7 @@
     <TextView
         android:id="@+id/campgroundName"
         android:layout_width="0dp"
+        style="@style/App.TextView.Large"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
@@ -31,6 +33,7 @@
 
     <TextView
         android:id="@+id/campgroundLocation"
+        style="@style/App.TextView.Medium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -45,6 +48,7 @@
     <TextView
         android:id="@+id/campgroundDescription"
         android:layout_width="0dp"
+        style="@style/App.TextView.Medium"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
